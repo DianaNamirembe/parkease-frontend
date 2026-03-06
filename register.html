@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- this the page title -->
+    <title>ParkEase-Vehicle Registration</title>
+    <!-- this the bootstrap link for in-styling and icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- this is the for background color of the body-->
+
+<body class="bg-light">
+    <!-- this is the nav bar section -->
+     <!-- Top navigation bar with: Dashboard, Registration, History links and user profile -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+        <div class="container-fluid"> <a class="navbar-brand fw-bold" href="#">ParkEase</a>
+            <div class="navbar-nav mx-auto"> <a class="nav-link" href="dashboard.html">Dashboard</a>
+                <a class="nav-link active" href="register.html">Registration</a><a class="nav-link active"
+                    href="reports.html">History</a>
+            </div>
+            <div class="navbar-nav ms-auto"></div>> <a class="navbar-brand fw-bold fs-6" href="#">
+                <i class="bi bi-person fs-6 me-2"></i>Diana Namirembe
+            </a>
+        </div>
+        </div>
+    </nav>
+    <!-- this is the registration section -->
+    <div class="container pb-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+                
+                <h2 class="fw-bold mb4">Vehicle Registration</h2>
+                <p class="text-muted">Register incoming vehicles for secure entry and automated billing</p>
+                <!-- Driver Information section: Driver Name input (with hint text), Phone Number input (+256 prefix) -->
+                <form class="card border-0 shadow-sm p-4">
+                    <h5 class="text-danger-emphasis mb-3"><i class="bi bi-person-fill"></i> DRIVER INFORMATION</h5>
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-6"> <label for="form-label">Driver Name</label> <input type="text"
+                                class="form-control" placeholder="Enter full name as per ID" required></div>
+                        <div class="col-md-6"><label for="form-label">Phone Number</label>
+                            <div class="input-group"> <span class="input-group-text">+256</span>
+                                <input type="text" class="form-control placeholder=700 000 000">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- this is the vehicle information Section -->
+                    <hr class="my-4">
+                    <h5 class="text-danger-emphasis mb-3"> <i class="bi bi-truck"></i>VEHICLE INFORMATION</h5>
+                    <div class="row g-3 mb-4"> 
+                         <!--  Vehicle Type dropdown (Truck, Personal Car, Taxi, Coaster, Boda-boda),
+                            Number Plate input (with # icon and placeholder), Vehicle Model & Color text input  -->
+                        
+                        <div class="col-md-6"> <label for="form-label">Vehicle Type</label>
+                            <div class="input-group"><select name="form-select" id="typeSelect">
+                                    <option selected>Select Vehicle Type</option>
+                                    <option value="truck">Truck</option>
+                                    <option value="car">Personal Car</option>
+                                    <option value="taxi">Taxi</option>
+                                    <option value="Boda">Boda Boda</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6"> <label for="form-label">Number Plate</label>
+                            <div class="input-group"> <span class="input-group-text">#</span><input type="text"
+                                    class="form-control" placeholder="E.G. UBA 123A" required></div>
+
+                        </div>
+                        <div class="col-md-6"> <label for="form-label">Vehicle Model & Color</label> <input type="text"
+                                class="form-control" placeholder="e.g.,Totoya Harrier Silver"></div>
+                                <!--  NIN Number field  -->
+                        <div class="col-md-6" id="ninSection"> <label for="form-label">NIN Number (Required for Boda
+                                Boda)</label> <input type="text" class="form-control border-danger"
+                                placeholder="CM1234567890"></div>
+
+                    </div>
+                    <!-- Register and print button and the clear form button-->
+                    <div class="d-flex justify-content-between align-items-center mt-5"> <button type="submit"
+                            class="btn btn-primary px-5 py-2"> <i class="bi bi-printer"></i> Register & Print
+                            Receipt</button> <button type="reset"
+                            class="btn btn-secondary text-muted text-decoration-none">Clear Form</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Quick Tips floating card  keyboard shortcut hints -->
+    <div class="position-fixed bottom-0 end-0 m-4 card p-3 shadow" style="width: 250px;">
+        <h6 class="fw-bold mb-2"> <i class="bi bi-lightbulb"> Quick Tips</i></h6>
+        <ul class="small text-muted mb-0">
+            <li>Use Tab to move between fields.</li>
+            <li>Nin is mandatory for all motorcycles.</li>
+            <li>Double check the plate before printing.</li>
+
+        </ul>
+    </div>
+    <!-- Footer showing: System Version and Session Started time-->
+    <footer class="text-center text-muted small py-4"> System Version 1.0.2 | Session Started: 08:30 AM</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+/* this targets the pill which was blue to danger-subtle which matches my theme */
+.nav-pills .nav-link.active {
+  background-color: #58151c;
+  color: white;
+}
