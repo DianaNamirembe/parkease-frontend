@@ -3,3 +3,7 @@
   background-color: #58151c;
   color: white;
 }
+.nav-link.active {
+    border-bottom: 2px solid #291618; 
+    font-weight: bold;
+}
