@@ -4,6 +4,88 @@
   color: white;
 }
 .nav-link.active {
-    border-bottom: 2px solid #291618; 
-    font-weight: bold;
+  border-bottom: 2px solid #291618;
+  font-weight: bold;
 }
+:root {
+  --parkease-blue: #0d6efd;
+  --parkease-red: #dc3545;
+  --parkease-light-gray: #f8f9fa;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--parkease-light-gray);
+}
+
+/* Custom Card Styling for Dashboard & Reports */
+.card {
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); 
+}
+
+/* Specific Highlight for the Sign-out Fee */
+.fee-display {
+  background-color: rgba(13, 110, 253, 0.1);
+  border: 1px solid rgba(13, 110, 253, 0.25);
+  color: var(--parkease-blue);
+}
+
+
+
+
+/* Receipt Preview Styling (Sign-out Page) */
+.receipt-paper {
+  font-family: "Courier New", Courier, monospace;
+  border: 1px dashed #ccc;
+  position: relative;
+}
+
+.receipt-paper::before,
+.receipt-paper::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background-size: 20px 20px;
+}
+
+/* Footer for Admin Panel */
+footer {
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+ .app-container {
+display: flex;
+height: 100vh;
+}
+.sidebar {
+width: 240px;
+background-color: #1E3A5F;
+flex-shrink: 0;
+}
+.main-content {
+flex: 1;
+overflow-y: auto;
+padding: 24px;
+background-color: #F5F7FA;
+}
+
+
+
+.stats-row {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+margin-bottom: 24px;
+}
+.stat-card {
+background: white;
+border-radius: 8px;
+padding: 20px;
+box-shadow: 0 1px 4px rgba(0,0,0,0.08);}
