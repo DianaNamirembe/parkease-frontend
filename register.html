@@ -41,7 +41,7 @@
                     <h5 class="text-danger-emphasis mb-3"><i class="bi bi-person-fill"></i> DRIVER INFORMATION</h5>
                     <div class="row g-3 mb-4">
                         <div class="col-md-6"> <label for="form-label">Driver Name</label> <input type="text"
-                                class="form-control" placeholder="Enter full name as per ID"></div>
+                                class="form-control" placeholder="Enter full name as per ID " required></div>
                         <div class="col-md-6"><label for="form-label">Phone Number</label>
                             <div class="input-group"> <span class="input-group-text">+256</span>
                                 <input type="text" class="form-control placeholder=700 000 000">
@@ -56,7 +56,7 @@
                             Number Plate input (with # icon and placeholder), Vehicle Model & Color text input  -->
 
                         <div class="col-md-6"> <label for="form-label">Vehicle Type</label>
-                            <div class="input-group"><select class="form-select">
+                            <div class="input-group"><select class="form-select" required>
                                     <option selected>Select Vehicle Type</option>
                                     <option value="truck">Truck</option>
                                     <option value="car">Personal Car</option>
@@ -79,10 +79,10 @@
 
                     </div>
                     <!-- Register and print button and the clear form button-->
-                    <div class="d-flex justify-content-between align-items-center  mt-5"><a
-                            class="btn btn-primary px-5 py-2" href="signout.html"><i
+                    <div class="d-flex justify-content-between align-items-center  mt-5"><button type="submit"
+                            class="btn btn-primary px-5 py-2"><i
                                 class="bi bi-printer text-white"></i> Register & Print
-                            Receipt</a> <button type="reset"
+                            Receipt</button> <button type="reset"
                             class="btn btn-secondary text-muted text-decoration-none">Clear Form</button></div>
                 </form>
             </div>
