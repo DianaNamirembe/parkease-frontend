@@ -35,32 +35,4 @@ body {
   color: var(--parkease-blue);
 }
 
- .app-container {
-display: flex;
-height: 100vh;
-}
-.sidebar {
-width: 240px;
-background-color: #1E3A5F;
-flex-shrink: 0;
-}
-.main-content {
-flex: 1;
-overflow-y: auto;
-padding: 24px;
-background-color: #F5F7FA;
-}
 
-
-
-.stats-row {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 20px;
-margin-bottom: 24px;
-}
-.stat-card {
-background: white;
-border-radius: 8px;
-padding: 20px;
-box-shadow: 0 1px 4px rgba(0,0,0,0.08);}
